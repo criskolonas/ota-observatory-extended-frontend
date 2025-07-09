@@ -24,6 +24,7 @@ export class LogoutComponent {
       this.logoutService.logoutUser().subscribe();
       this.ud.sessionData = null;
       this.router.navigate(['login']);
+      window.location.reload();
     } catch (error) {
       console.error('[LOGOUT]An error occurred:', error);
     }

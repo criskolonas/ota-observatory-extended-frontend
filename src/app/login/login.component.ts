@@ -21,8 +21,6 @@ export class LoginComponent {
     private formBuilder: FormBuilder,
     private router: Router,
     private toast: ToastService,
-    private userData: UserDataService,
-    private authService: AuthService,
   ) {}
 
   form = this.formBuilder.nonNullable.group({
